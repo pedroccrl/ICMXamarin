@@ -10,6 +10,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)App.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Api\ComputerVision.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\FotoPageVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)View\FotoPage.cs" />
   </ItemGroup>
@@ -17,7 +18,6 @@
     <None Include="$(MSBuildThisFileDirectory)GettingStarted.Xamarin" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="$(MSBuildThisFileDirectory)Model\" />
     <Folder Include="$(MSBuildThisFileDirectory)Controls\" />
     <Folder Include="$(MSBuildThisFileDirectory)ViewModel\" />
     <Folder Include="$(MSBuildThisFileDirectory)View\" />

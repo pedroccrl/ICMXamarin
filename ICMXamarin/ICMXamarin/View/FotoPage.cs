@@ -28,8 +28,8 @@ namespace ICMXamarin.View
                 HorizontalOptions = LayoutOptions.FillAndExpand,
                 VerticalOptions = LayoutOptions.FillAndExpand
             };
-            bFoto.BindingContext = vm;
-            bFoto.SetBinding(Button.TriggersProperty, "TakeFoto");
+
+            bFoto.BindingContext = new ButtonVM(vm);
 
         }
     }

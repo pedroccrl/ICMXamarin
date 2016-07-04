@@ -1,4 +1,5 @@
-﻿using ICMXamarin.View;
+﻿using ICMXamarin.Model.Api;
+using ICMXamarin.View;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +15,7 @@ namespace ICMXamarin
 		{
             // The root page of your application
             MainPage = new FotoPage();
+            ComputerVision.MakeRequest();
 		}
 
 		protected override void OnStart ()

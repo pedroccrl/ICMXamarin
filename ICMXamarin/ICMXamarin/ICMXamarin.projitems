@@ -11,6 +11,11 @@
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)App.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Api\ComputerVision.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Camera\ViewModel\TesteCamera.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Camera\View\CameraPage.xaml.cs">
+      <DependentUpon>CameraPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\FotoPageVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)View\FotoPage.cs" />
   </ItemGroup>
@@ -21,5 +26,11 @@
     <Folder Include="$(MSBuildThisFileDirectory)Controls\" />
     <Folder Include="$(MSBuildThisFileDirectory)ViewModel\" />
     <Folder Include="$(MSBuildThisFileDirectory)View\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Model\Camera\View\CameraPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

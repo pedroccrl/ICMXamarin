@@ -1,4 +1,5 @@
 ﻿using ICMXamarin.Model.Api;
+using ICMXamarin.Model.Camera.View;
 using ICMXamarin.View;
 using System;
 using System.Collections.Generic;
@@ -14,7 +15,7 @@ namespace ICMXamarin
 		public App ()
 		{
             // The root page of your application
-            MainPage = new FotoPage();
+            MainPage = new CameraPage();
             ComputerVision.MakeRequest();
 		}
 

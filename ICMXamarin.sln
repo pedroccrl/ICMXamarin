@@ -17,6 +17,11 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ICMXamarin", "ICMXamarin\IC
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		ICMXamarin\ICMXamarin\ICMXamarin.projitems*{59606e4b-56ab-4e7c-bc8c-b84a07feb0fb}*SharedItemsImports = 4
+		ICMXamarin\ICMXamarin\ICMXamarin.projitems*{8fef4cce-868f-4af6-ac64-c2a1b4d694f2}*SharedItemsImports = 4
+		ICMXamarin\ICMXamarin\ICMXamarin.projitems*{3f223ab3-9d87-4dc4-a9ec-7ea78d7542f8}*SharedItemsImports = 4
+		ICMXamarin\ICMXamarin\ICMXamarin.projitems*{ee11c578-a24c-4673-a6f0-a4191138e107}*SharedItemsImports = 4
+		ICMXamarin\ICMXamarin\ICMXamarin.projitems*{9f2d282d-ce89-4f41-ad6a-54b878a6d754}*SharedItemsImports = 4
 		ICMXamarin\ICMXamarin\ICMXamarin.projitems*{b068ae29-08f4-4dce-9d77-851f88f0074a}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

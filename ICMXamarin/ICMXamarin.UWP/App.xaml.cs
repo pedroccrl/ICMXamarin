@@ -30,7 +30,6 @@ namespace ICMXamarin.UWP
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
-            
         }
 
         /// <summary>

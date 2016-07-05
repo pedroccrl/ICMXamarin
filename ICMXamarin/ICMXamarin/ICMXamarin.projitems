@@ -12,6 +12,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Api\ComputerVision.cs" />
 <<<<<<< HEAD
+<<<<<<< HEAD
     <Compile Include="$(MSBuildThisFileDirectory)Model\ISaveAndLoad.cs" />
 =======
     <Compile Include="$(MSBuildThisFileDirectory)Model\Camera\ViewModel\TesteCamera.cs" />
@@ -20,6 +21,8 @@
       <SubType>Code</SubType>
     </Compile>
 >>>>>>> 0102da930061a4d2b0d7b564527f2110beffa057
+=======
+>>>>>>> parent of 7fbb69e... Acesso a API
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\FotoPageVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)View\FotoPage.cs" />
   </ItemGroup>

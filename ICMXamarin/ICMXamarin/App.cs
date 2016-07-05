@@ -1,10 +1,14 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿using ICMXamarin.Model;
 using ICMXamarin.Model.Api;
 =======
 ﻿using ICMXamarin.Model.Api;
 using ICMXamarin.Model.Camera.View;
 >>>>>>> 0102da930061a4d2b0d7b564527f2110beffa057
+=======
+﻿using ICMXamarin.Model.Api;
+>>>>>>> parent of 7fbb69e... Acesso a API
 using ICMXamarin.View;
 using System;
 using System.Collections.Generic;
@@ -22,17 +26,19 @@ namespace ICMXamarin
             // The root page of your application
 <<<<<<< HEAD
             MainPage = new FotoPage();
+<<<<<<< HEAD
             ComputerVision.DownoadHttp();
             //SaveAndLoad.Carregar("ms-appx//Assets/futebol.jpg").Wait();
 =======
             MainPage = new CameraPage();
             ComputerVision.MakeRequest();
 >>>>>>> 0102da930061a4d2b0d7b564527f2110beffa057
+=======
+            ComputerVision.MakeRequest();
+>>>>>>> parent of 7fbb69e... Acesso a API
 		}
 
-        public static ISaveAndLoad SaveAndLoad { get; set; }
-
-        protected override void OnStart ()
+		protected override void OnStart ()
 		{
 			// Handle when your app starts
 		}

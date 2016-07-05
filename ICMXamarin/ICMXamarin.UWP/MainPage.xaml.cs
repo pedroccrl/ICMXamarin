@@ -20,7 +20,7 @@ namespace ICMXamarin.UWP
         public MainPage()
         {
             this.InitializeComponent();
-
+            ICMXamarin.App.SaveAndLoad = new SaveAndLoad();
             LoadApplication(new ICMXamarin.App());
         }
     }

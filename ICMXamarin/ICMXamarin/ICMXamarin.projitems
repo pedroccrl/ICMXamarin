@@ -11,6 +11,7 @@
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)App.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Api\ComputerVision.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\ISaveAndLoad.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\FotoPageVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)View\FotoPage.cs" />
   </ItemGroup>

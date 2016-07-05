@@ -1,4 +1,5 @@
-﻿using ICMXamarin.Model.Api;
+﻿using ICMXamarin.Model;
+using ICMXamarin.Model.Api;
 using ICMXamarin.View;
 using System;
 using System.Collections.Generic;
@@ -15,10 +16,13 @@ namespace ICMXamarin
 		{
             // The root page of your application
             MainPage = new FotoPage();
-            ComputerVision.MakeRequest();
+            ComputerVision.DownoadHttp();
+            //SaveAndLoad.Carregar("ms-appx//Assets/futebol.jpg").Wait();
 		}
 
-		protected override void OnStart ()
+        public static ISaveAndLoad SaveAndLoad { get; set; }
+
+        protected override void OnStart ()
 		{
 			// Handle when your app starts
 		}

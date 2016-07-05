@@ -12,6 +12,7 @@ namespace ICMXamarin.View
         Button bFoto;
         public FotoPage()
         {
+            
             BindingContext = vm;
             Title = "Fotos";
             

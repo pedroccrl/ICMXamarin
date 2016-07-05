@@ -11,7 +11,15 @@
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)App.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Api\ComputerVision.cs" />
+<<<<<<< HEAD
     <Compile Include="$(MSBuildThisFileDirectory)Model\ISaveAndLoad.cs" />
+=======
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Camera\ViewModel\TesteCamera.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Camera\View\CameraPage.xaml.cs">
+      <DependentUpon>CameraPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+>>>>>>> 0102da930061a4d2b0d7b564527f2110beffa057
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\FotoPageVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)View\FotoPage.cs" />
   </ItemGroup>
@@ -22,5 +30,11 @@
     <Folder Include="$(MSBuildThisFileDirectory)Controls\" />
     <Folder Include="$(MSBuildThisFileDirectory)ViewModel\" />
     <Folder Include="$(MSBuildThisFileDirectory)View\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Model\Camera\View\CameraPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

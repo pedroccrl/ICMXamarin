@@ -1,6 +1,6 @@
 ﻿using ICMXamarin.Model;
 using ICMXamarin.Model.Api;
-using ICMXamarin.View;
+using ICMXamarin.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,7 +16,6 @@ namespace ICMXamarin
 		{
             // The root page of your application
             MainPage = new FotoPage();
-            ComputerVision.DownoadHttp();
             //SaveAndLoad.Carregar("ms-appx//Assets/futebol.jpg").Wait();
 		}
 

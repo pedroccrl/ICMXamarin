@@ -124,6 +124,12 @@
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Values\colors.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\Values-v21\" />
+  </ItemGroup>
   <Import Project="..\ICMXamarin\ICMXamarin.projitems" Label="Shared" Condition="Exists('..\ICMXamarin\ICMXamarin.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets" Condition="Exists('..\..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets')" />

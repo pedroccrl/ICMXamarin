@@ -13,7 +13,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)Model\Api\ComputerVision.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\ISaveAndLoad.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\FotoPageVM.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)View\FotoPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\CameraPreview.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\FotoPage.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="$(MSBuildThisFileDirectory)GettingStarted.Xamarin" />
@@ -21,6 +22,5 @@
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Controls\" />
     <Folder Include="$(MSBuildThisFileDirectory)ViewModel\" />
-    <Folder Include="$(MSBuildThisFileDirectory)View\" />
   </ItemGroup>
 </Project>

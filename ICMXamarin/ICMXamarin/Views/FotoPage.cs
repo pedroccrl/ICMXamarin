@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Text;
 using Xamarin.Forms;
 
-namespace ICMXamarin.View
+namespace ICMXamarin.Views
 {
     public class FotoPage: ContentPage
     {
@@ -21,12 +21,18 @@ namespace ICMXamarin.View
                 HorizontalOptions = LayoutOptions.FillAndExpand,
                 VerticalOptions = LayoutOptions.FillAndExpand
             };
+            var camera = new CameraPreview
+            {
+                Camera = CameraOptions.Rear,
+                HorizontalOptions = LayoutOptions.FillAndExpand,
+                VerticalOptions = LayoutOptions.FillAndExpand
+            };
             Content = new StackLayout
             {
                 Padding = 30,
                 Children =
                 {
-                    bFoto
+                    camera
                 }
             };
         }

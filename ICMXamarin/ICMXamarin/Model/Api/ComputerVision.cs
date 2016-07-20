@@ -10,6 +10,29 @@ namespace ICMXamarin.Model.Api
 {
     class ComputerVision
     {
+        static string ocr = "https://api.projectoxford.ai/vision/v1.0/ocr";
+
+        public static async Task<string> LerImagem(byte[] data)
+        {
+            var client = new HttpClient();
+
+            // Request headers
+            client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", "e27d0a628eee4ab8984a771eb470cc63");
+
+            var uri = ocr;
+            HttpResponseMessage response;
+            // Request body
+            string resposta = string.Empty;
+            using (var content = new ByteArrayContent(data))
+            {
+                content.Headers.ContentType = new MediaTypeHeaderValue("application/octet-stream");
+                response = await client.PostAsync(uri, content);
+                resposta = await response.Content.ReadAsStringAsync();
+            }
+            System.Diagnostics.Debug.WriteLine(resposta);
+            return resposta;
+        }
+
         public static async Task<string> DescreverImagem(byte[] data)
         {
             var client = new HttpClient();
@@ -27,7 +50,7 @@ namespace ICMXamarin.Model.Api
                 response = await client.PostAsync(uri, content);
                 resposta = await response.Content.ReadAsStringAsync();
             }
-
+            System.Diagnostics.Debug.WriteLine(resposta);
             return resposta;
         }
 

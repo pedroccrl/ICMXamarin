@@ -21,9 +21,8 @@ namespace ICMXamarin.Views
                 HorizontalOptions = LayoutOptions.FillAndExpand,
                 VerticalOptions = LayoutOptions.FillAndExpand
             };
-            var camera = new CameraPreview
+            var camera = new CameraPage
             {
-                Camera = CameraOptions.Rear,
                 HorizontalOptions = LayoutOptions.FillAndExpand,
                 VerticalOptions = LayoutOptions.FillAndExpand
             };

@@ -96,6 +96,16 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CameraManualControls\MainPage.ExposureValue.xaml.cs" />
+    <Compile Include="CameraManualControls\MainPage.Flash.xaml.cs" />
+    <Compile Include="CameraManualControls\MainPage.Focus.xaml.cs" />
+    <Compile Include="CameraManualControls\MainPage.IsoSpeed.xaml.cs" />
+    <Compile Include="CameraManualControls\MainPage.Shutter.xaml.cs" />
+    <Compile Include="CameraManualControls\MainPage.WhiteBalance.xaml.cs" />
+    <Compile Include="CameraManualControls\MainPage.xaml.cs" />
+    <Compile Include="CameraManualControls\MainPage.Zoom.xaml.cs" />
+    <Compile Include="CameraPageRenderer.cs" />
+    <Compile Include="Fala.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -124,6 +134,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="CameraManualControls\MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -133,9 +147,6 @@
     <SDKReference Include="WindowsMobile, Version=10.0.10240.0">
       <Name>Windows Mobile Extensions for the UWP</Name>
     </SDKReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

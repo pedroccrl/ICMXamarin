@@ -12,7 +12,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Api\ComputerVision.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\ISaveAndLoad.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\MSCognitiveServices.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\FotoPageVM.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\CameraPage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Views\CameraPreview.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Views\FotoPage.cs" />
   </ItemGroup>
